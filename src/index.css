@@ -48,7 +48,6 @@
   :root, :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --color-yellow-400: oklch(.852 .199 91.936);
     --color-green-100: oklch(.962 .044 156.743);
     --color-green-600: oklch(.627 .194 149.214);
     --color-blue-100: oklch(.932 .032 255.585);
@@ -445,16 +444,8 @@
     top: calc(var(--spacing) * 0);
   }
 
-  .-right-6 {
-    right: calc(var(--spacing) * -6);
-  }
-
   .right-0 {
     right: calc(var(--spacing) * 0);
-  }
-
-  .-bottom-6 {
-    bottom: calc(var(--spacing) * -6);
   }
 
   .left-0 {
@@ -533,10 +524,6 @@
 
   .mx-auto {
     margin-inline: auto;
-  }
-
-  .mb-1 {
-    margin-bottom: calc(var(--spacing) * 1);
   }
 
   .mb-2 {
@@ -767,10 +754,6 @@
 
   .justify-center {
     justify-content: center;
-  }
-
-  .gap-0\.5 {
-    gap: calc(var(--spacing) * .5);
   }
 
   .gap-1\.5 {
@@ -1027,10 +1010,6 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
-  .fill-current {
-    fill: currentColor;
-  }
-
   .object-cover {
     object-fit: cover;
   }
@@ -1241,10 +1220,6 @@
 
   .text-white {
     color: var(--color-white);
-  }
-
-  .text-yellow-400 {
-    color: var(--color-yellow-400);
   }
 
   .underline-offset-4 {

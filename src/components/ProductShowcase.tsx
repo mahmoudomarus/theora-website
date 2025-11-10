@@ -1,3 +1,4 @@
+import image_8b6f63812a6294b18cfcf8f5ee2ccab3acc1c156 from 'figma:asset/8b6f63812a6294b18cfcf8f5ee2ccab3acc1c156.png';
 import { Check } from "lucide-react";
 import gradientProduct from "figma:asset/cff5880faa201a1e07728dac528c0e71a1692f38.png";
 
@@ -51,24 +52,12 @@ export function ProductShowcase() {
             <div className="relative">
               <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
                 <img 
-                  src={gradientProduct} 
+                  src={image_8b6f63812a6294b18cfcf8f5ee2ccab3acc1c156} 
                   alt="Product showcase with gradient design"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl">
-                <div className="text-sm text-gray-500 mb-1">Customer Rating</div>
-                <div className="flex items-center gap-2">
-                  <div className="text-3xl text-gray-900">4.9</div>
-                  <div className="flex gap-0.5">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="h-5 w-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                      </svg>
-                    ))}
-                  </div>
-                </div>
-              </div>
+              {/* removed customer rating card */}
             </div>
           </div>
         </div>
