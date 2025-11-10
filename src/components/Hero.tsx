@@ -3,6 +3,18 @@ import { ArrowRight } from "lucide-react";
 import gradientHero from "figma:asset/24f0c203e4f07b6cbb68ba19fbb4c287daf9f623.png";
 
 export function Hero() {
+  const scrollToCTA = () => {
+    const element = document.getElementById('cta');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleWatchDemo = () => {
+    // In a real app, this would open a video modal or redirect to a demo video
+    alert('Demo video coming soon! Our revolutionary smart glasses will be showcased with a full product demonstration.');
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div 
@@ -33,11 +45,11 @@ export function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-            <Button size="lg" className="text-lg px-8 py-6">
+            <Button size="lg" className="text-lg px-8 py-6" onClick={scrollToCTA}>
               Pre-Order Now
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-white/80 backdrop-blur-sm">
+            <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-white/80 backdrop-blur-sm" onClick={handleWatchDemo}>
               Watch Demo
             </Button>
           </div>
